@@ -1,23 +1,63 @@
 # <h1 align="center">Laporan Praktikum Modul Pengenalan Bahasa C++ (1)</h1>
-<p align="center">Arvinanto Bahtiar</p>
+<p align="center">Adam Haydar</p>
 
 ## Dasar Teori
 
-Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri serta susunan yang terstruktur per topiknya.
+ChatGPT bilang:
+
+Bahasa C++ adalah pengembangan dari bahasa C yang mendukung pemrograman prosedural dan berorientasi objek. Untuk menulis dan menjalankan program C++, digunakan IDE seperti Code::Blocks, yang menyediakan editor, compiler, dan debugger dalam satu tempat. Struktur dasar program C++ terdiri dari header (#include <iostream>), fungsi utama main(), serta perintah input-output dengan cin dan cout. Program menggunakan variabel untuk menyimpan data dan operator untuk melakukan operasi logika maupun aritmatika. Dengan memahami dasar ini, kita dapat mengenal cara kerja dan struktur utama dalam pemrograman C++.
 
 ## Guided 
 
-### 1. [Nama Topik]
+### 1. MODUL TAMBAHAN 
+GIT dan GITHUB 
 
-```C++
 #include <iostream>
+
 using namespace std;
 
-int main() {
-    cout << "ini adalah file code guided praktikan" << endl;
+int main () {
+    // array 1 dimensi
+    int arrID[5] = {10,20,30,40,50};
+    cout << "Array 1 Dimensi" << endl;
+    for (int i=0; i<5; i++) {
+        cout << "arrID" << i << " = " << arrID[i] << endl; 
+        
+    }
+    cout << endl;
+
+    // array 2 dimensi baris & kolom
+    int arr2D[2][3] = {
+        {1,2,3},
+        {4,5,6}
+    };
+    cout << "Array 2 Dimensi" << endl;
+    for (int i=0; i<2; i++) {
+        for (int j=0; j<3; j++) {
+            cout << "arr2D[" << i << "}[" << j << "] = " << arr2D[i][j]
+            << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+    
+    //array multi dimensi (3D)
+    int arr3D[2][2][3] = {
+    { { 1, 2, 3 }, {4, 5, 6} },
+    { { 7, 8, 9} , {10, 11, 12} }   
+    };
+    cout << "array 3 dimensi" << endl;
+    for (int i=0; i<2; i++) {
+        for (int j=0; j<2; j++) {
+            for (int k=0; k<3; k++) {
+                cout << "arr3D[" << i << "][" << j << "]["
+                << k << "] = " << arr3D[i][j][k] << endl;
+            }
+        }
+    }
+
     return 0;
 }
-```
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 ## Unguided 
