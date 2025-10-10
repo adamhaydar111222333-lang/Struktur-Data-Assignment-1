@@ -116,9 +116,9 @@ int main() {
 }
 ```
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+<img width="879" height="263" alt="Image" src="https://github.com/user-attachments/assets/93c08398-c378-413e-abd3-30f4335ace87" />
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Kode di atas digunakan untuk menyimpan dan menampilkan data pelajaran ke layar menggunakan function cout untuk mengeksekusinya. Program ini menampilkan teks berupa nama pelajaran dan kode pelajaran yang telah dimasukkan sebelumnya.
 
 #### Full code Screenshot:
 ![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
