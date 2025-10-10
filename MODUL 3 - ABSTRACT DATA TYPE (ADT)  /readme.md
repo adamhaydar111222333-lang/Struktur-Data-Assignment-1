@@ -121,7 +121,7 @@ int main() {
 Kode di atas digunakan untuk menyimpan dan menampilkan data pelajaran ke layar menggunakan function cout untuk mengeksekusinya. Program ini menampilkan teks berupa nama pelajaran dan kode pelajaran yang telah dimasukkan sebelumnya.
 
 #### Full code Screenshot:
-![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
+<img width="783" height="898" alt="Image" src="https://github.com/user-attachments/assets/025840d9-3476-43d2-b047-2846143abb5d" />
 
 ### 3. [Soal]
 
