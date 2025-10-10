@@ -130,9 +130,59 @@ Kode di atas digunakan untuk menyimpan dan menampilkan data pelajaran ke layar m
 using namespace std;
 
 int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
+    int A[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+    int B[3][3] = {{9,8,7},{6,5,4},{3,2,1}};
+    int *p1, *p2;
+    int x = 10, y = 20;
+    p1 = &x;
+    p2 = &y;
+
+    cout << "Array A:" << endl;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << A[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "\nArray B:" << endl;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << B[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    int temp = A[1][1];
+    A[1][1] = B[1][1];
+    B[1][1] = temp;
+
+    cout << "\nSetelah elemen [1][1] ditukar:" << endl;
+    cout << "Array A:" << endl;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << A[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "\nArray B:" << endl;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << B[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "\nSebelum tukar pointer: x = " << x << ", y = " << y << endl;
+    int temp2 = *p1;
+    *p1 = *p2;
+    *p2 = temp2;
+    cout << "Sesudah tukar pointer: x = " << x << ", y = " << y << endl;
+
     return 0;
 }
+
 ```
 #### Output:
 ![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
