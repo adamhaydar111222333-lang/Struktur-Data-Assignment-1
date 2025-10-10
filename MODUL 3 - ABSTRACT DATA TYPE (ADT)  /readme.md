@@ -116,9 +116,9 @@ int main() {
 }
 ```
 #### Output:
-<img width="879" height="263" alt="Image" src="https://github.com/user-attachments/assets/93c08398-c378-413e-abd3-30f4335ace87" />
+<img width="834" height="682" alt="Image" src="https://github.com/user-attachments/assets/55b39664-1c77-4454-b5f2-89fc182b5e44" />
 
-Kode di atas digunakan untuk menyimpan dan menampilkan data pelajaran ke layar menggunakan function cout untuk mengeksekusinya. Program ini menampilkan teks berupa nama pelajaran dan kode pelajaran yang telah dimasukkan sebelumnya.
+Kode di atas digunakan untuk menampilkan isi dua array, menukar salah satu elemen antar array, dan menukar nilai dua variabel melalui pointer, lalu hasilnya dicetak ke layar menggunakan cout untuk mengeksekusinya.
 
 #### Full code Screenshot:
 <img width="783" height="898" alt="Image" src="https://github.com/user-attachments/assets/025840d9-3476-43d2-b047-2846143abb5d" />
