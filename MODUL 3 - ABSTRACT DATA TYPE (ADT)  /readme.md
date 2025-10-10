@@ -25,7 +25,7 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 ## Unguided 
 
 ### 1. [Soal]
-```
+```C++
 #include <iostream>
 using namespace std;
 
@@ -80,7 +80,7 @@ Kode di atas digunakan untuk menyimpan dan menampilkan data mahasiswa sebanyak m
 Program ini menggunakan struct Mahasiswa untuk menyimpan data seperti nama, NIM, nilai UTS, UAS, dan tugas.
 
 #### Full code Screenshot:
-![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
+<img width="757" height="943" alt="Image" src="https://github.com/user-attachments/assets/8098dd23-b43f-4b05-9c30-66576bb7e8ad" />
 
 ### 2. [Soal]
 
@@ -88,8 +88,30 @@ Program ini menggunakan struct Mahasiswa untuk menyimpan data seperti nama, NIM,
 #include <iostream>
 using namespace std;
 
+struct pelajaran {
+    string namaMapel;
+    string kodeMapel;
+};
+
+pelajaran create_pelajaran(string nama, string kode) {
+    pelajaran p;
+    p.namaMapel = nama;
+    p.kodeMapel = kode;
+    return p;
+}
+
+void tampil_pelajaran(pelajaran pel) {
+    cout << "nama pelajaran : " << pel.namaMapel << endl;
+    cout << "nilai : " << pel.kodeMapel << endl;
+}
+
 int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
+    string namapel = "Struktur Data";
+    string kodepel = "STD";
+
+    pelajaran pel = create_pelajaran(namapel, kodepel);
+    tampil_pelajaran(pel);
+
     return 0;
 }
 ```
