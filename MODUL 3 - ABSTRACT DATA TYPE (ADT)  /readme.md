@@ -74,7 +74,7 @@ int main() {
 }
 ```
 #### Output:
-<img width="834" height="682" alt="Image" src="https://github.com/user-attachments/assets/55b39664-1c77-4454-b5f2-89fc182b5e44" />
+<img width="497" height="938" alt="Image" src="https://github.com/user-attachments/assets/211738cf-215f-4efb-a2e0-54a8615fbc72" />
 
 Kode di atas digunakan untuk menyimpan dan menampilkan data mahasiswa sebanyak maksimal 10 orang.
 Program ini menggunakan struct Mahasiswa untuk menyimpan data seperti nama, NIM, nilai UTS, UAS, dan tugas.
