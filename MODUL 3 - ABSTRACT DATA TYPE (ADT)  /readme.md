@@ -194,7 +194,7 @@ int main() {
 #### Output:
 <img width="986" height="274" alt="Image" src="https://github.com/user-attachments/assets/afdd8fc8-554f-4fce-b851-faacb6acbfe6" />
 
-Kode di atas digunakan untuk menampilkan isi dua array, menukar salah satu elemen antar array, dan menukar nilai dua variabel melalui pointer, lalu hasilnya dicetak ke layar menggunakan cout untuk mengeksekusinya.
+Kode di atas digunakan untuk membuat dan menampilkan data pelajaran. Program ini menyimpan nama dan kode mata pelajaran menggunakan struktur Pelajaran, lalu menampilkan hasilnya ke layar melalui fungsi tampilPelajaran().
 
 #### Full code Screenshot:
 <img width="783" height="898" alt="Image" src="https://github.com/user-attachments/assets/025840d9-3476-43d2-b047-2846143abb5d" />
