@@ -263,7 +263,7 @@ int main() {
 #### Output:
 <img width="744" height="749" alt="Image" src="https://github.com/user-attachments/assets/fe25fa6e-99d8-471a-b153-e4be503d6247" />
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Kode di atas digunakan untuk menampilkan dua array 2 dimensi (A dan B), menukar satu elemen di posisi tertentu antar kedua array, serta menukar nilai dua variabel (x dan y) menggunakan pointer. Program ini memperlihatkan cara kerja array 2D dan pointer dalam C++.
 
 #### Full code Screenshot:
 <img width="401" height="1076" alt="Image" src="https://github.com/user-attachments/assets/827e646b-4b5e-4b82-ab82-78e18a13c269" />
