@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul Pengenalan Bahasa C++ (1)</h1>
+# <h1 align="center">ABSTRACT DATA TYPE (ADT)</h1>
 <p align="center">Adam Haydar</p>
 
 ## Dasar Teori
