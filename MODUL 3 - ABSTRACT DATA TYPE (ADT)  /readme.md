@@ -197,7 +197,12 @@ int main() {
 Kode di atas digunakan untuk membuat dan menampilkan data pelajaran. Program ini menyimpan nama dan kode mata pelajaran menggunakan struktur Pelajaran, lalu menampilkan hasilnya ke layar melalui fungsi tampilPelajaran().
 
 #### Full code Screenshot:
-<img width="783" height="898" alt="Image" src="https://github.com/user-attachments/assets/025840d9-3476-43d2-b047-2846143abb5d" />
+<img width="913" height="528" alt="image" src="https://github.com/user-attachments/assets/5fd136b3-a50c-4c6e-a762-cddf24161f02" />
+<img width="894" height="546" alt="image" src="https://github.com/user-attachments/assets/b7ad4271-9769-44ad-b508-0346a5ff3242" />
+<img width="912" height="589" alt="image" src="https://github.com/user-attachments/assets/3af9a465-1dce-49ef-b1f6-f3a205faa154" />
+
+
+
 
 ### 3. [Soal]
 
