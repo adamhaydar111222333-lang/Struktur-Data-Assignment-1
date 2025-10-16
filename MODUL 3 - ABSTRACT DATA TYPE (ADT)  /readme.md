@@ -15,12 +15,62 @@ merupakan definisi STATIK.
 #include <iostream>
 using namespace std;
 
-int main() {
-    cout << "ini adalah file code guided praktikan" << endl;
-    return 0;
+struct mahasiswa{ 
+char nim[10]; 
+int nilai1,nilai2;
+};
+void inputMhs(mahasiswa &m); 
+float rata2(mahasiswa m);
+
+int main() 
+{ 
+mahasiswa mhs; 
+inputMhs(mhs); 
+cout << “rata-rata = “ << rata2(mhs); 
+return 0; 
+}
+
+
+void inputMhs(mahasiswa &m){ 
+cout << “input nama = “; 
+cin >> m.nim; 
+cout << “input nilai = “; 
+cin >> m.nilai1; 
+cout << “input nilai2 = “;
+cin >> m.nilai2; 
+} 
+float rata2(mahasiswa m){ 
+return float(m.nilai1+m.nilai2)/2; 
+}
+
+mahasiswa.h
+#ifndef MAHASISWA_H_INCLUDED 
+#define MAHASISWA_H_INCLUDED 
+struct mahasiswa{ 
+char nim[10]; 
+int nilai1, nilai2; 
+};
+void inputMhs(mahasiswa &m); 
+float rata2(mahasiswa m); 
+#endif // MAHASISWA_H_INCLUDED
+
+mahasiswa.cpp
+#include “mahasiswa.h” 
+void inputMhs(mahasiswa &m){ 
+cout << “input nama = “; 
+cin >> (m).nim; 
+cout << “input nilai = “; 
+cin >> (m).nilai1; 
+cout << “input nilai2 = “; 
+cin >> (m).nilai2;
+} 
+ 
+float rata2(mahasiswa m){ 
+  return float(m.nilai1+m.nilai2)/2; 
+}
 }
 ```
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Kode di atas digunakan untuk memasukkan data mahasiswa dan menghitung rata-rata dua nilai yang diinput.
 
 ## Unguided 
 
