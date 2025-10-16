@@ -261,7 +261,7 @@ int main() {
 Kode di atas berfungsi untuk menampilkan dua array 2 dimensi (A dan B), kemudian menukar satu elemen di posisi tertentu antara kedua array tersebut. Selain itu, program juga menukar nilai dua variabel (x dan y) dengan bantuan pointer.
 
 #### Full code Screenshot:
-<img width="401" height="1076" alt="Image" src="https://github.com/user-attachments/assets/827e646b-4b5e-4b82-ab82-78e18a13c269" />
+<img width="511" height="1055" alt="Image" src="https://github.com/user-attachments/assets/674afa20-5a95-4790-b09c-51f89d403881" />
 
 
 ## Kesimpulan
