@@ -192,7 +192,7 @@ int main() {
 }
 ```
 #### Output:
-
+<img width="986" height="274" alt="Image" src="https://github.com/user-attachments/assets/afdd8fc8-554f-4fce-b851-faacb6acbfe6" />
 
 Kode di atas digunakan untuk menampilkan isi dua array, menukar salah satu elemen antar array, dan menukar nilai dua variabel melalui pointer, lalu hasilnya dicetak ke layar menggunakan cout untuk mengeksekusinya.
 
