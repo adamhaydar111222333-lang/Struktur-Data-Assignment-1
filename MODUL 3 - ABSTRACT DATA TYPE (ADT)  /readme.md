@@ -9,7 +9,7 @@ merupakan definisi STATIK.
 
 ## Guided 
 
-### 1. ABSTRACT DATA TYPE (ADT)  
+### 1. ABSTRACT DATA TYPE (ADT) 
 
 ```C++
 #include <iostream>
