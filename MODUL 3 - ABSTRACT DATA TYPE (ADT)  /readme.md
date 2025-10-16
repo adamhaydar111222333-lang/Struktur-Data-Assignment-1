@@ -208,10 +208,32 @@ using namespace std;
 int main() {
     int A[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
     int B[3][3] = {{9,8,7},{6,5,4},{3,2,1}};
-    int *p1, *p2;
-    int x = 10, y = 20;
-    p1 = &x;
-    p2 = &y;
+
+    cout << "Array A sebelum ditukar:" << endl;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << A[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "\nArray B sebelum ditukar:" << endl;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << B[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            int temp = A[i][j];
+            A[i][j] = B[i][j];
+            B[i][j] = temp;
+        }
+    }
+
+    cout << "\nSetelah menukar seluruh isi array:" << endl;
 
     cout << "Array A:" << endl;
     for (int i = 0; i < 3; i++) {
@@ -228,42 +250,15 @@ int main() {
         }
         cout << endl;
     }
-
-    int temp = A[1][1];
-    A[1][1] = B[1][1];
-    B[1][1] = temp;
-
-    cout << "\nSetelah elemen [1][1] ditukar:" << endl;
-    cout << "Array A:" << endl;
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            cout << A[i][j] << " ";
-        }
-        cout << endl;
-    }
-
-    cout << "\nArray B:" << endl;
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            cout << B[i][j] << " ";
-        }
-        cout << endl;
-    }
-
-    cout << "\nSebelum tukar pointer: x = " << x << ", y = " << y << endl;
-    int temp2 = *p1;
-    *p1 = *p2;
-    *p2 = temp2;
-    cout << "Sesudah tukar pointer: x = " << x << ", y = " << y << endl;
 
     return 0;
 }
 
 ```
 #### Output:
-<img width="744" height="749" alt="Image" src="https://github.com/user-attachments/assets/fe25fa6e-99d8-471a-b153-e4be503d6247" />
+<img width="872" height="658" alt="Image" src="https://github.com/user-attachments/assets/dc19730e-938f-4c94-baad-edf1eeb01d70" />
 
-Kode di atas digunakan untuk menampilkan dua array 2 dimensi (A dan B), menukar satu elemen di posisi tertentu antar kedua array, serta menukar nilai dua variabel (x dan y) menggunakan pointer. Program ini memperlihatkan cara kerja array 2D dan pointer dalam C++.
+Kode di atas berfungsi untuk menampilkan dua array 2 dimensi (A dan B), kemudian menukar satu elemen di posisi tertentu antara kedua array tersebut. Selain itu, program juga menukar nilai dua variabel (x dan y) dengan bantuan pointer.
 
 #### Full code Screenshot:
 <img width="401" height="1076" alt="Image" src="https://github.com/user-attachments/assets/827e646b-4b5e-4b82-ab82-78e18a13c269" />
