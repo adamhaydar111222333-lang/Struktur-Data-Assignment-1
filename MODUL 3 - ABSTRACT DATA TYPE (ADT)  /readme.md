@@ -134,37 +134,28 @@ Program ini menggunakan struct Mahasiswa untuk menyimpan data seperti nama, NIM,
 
 ### 2. [Soal]
 
+"pelajaran.h"
 ```C++
-#include <iostream>
+#ifndef PELAJARAN_H
+#define PELAJARAN_H
+
+#include <string>
 using namespace std;
 
-struct pelajaran {
+struct Pelajaran {
     string namaMapel;
     string kodeMapel;
 };
 
-pelajaran create_pelajaran(string nama, string kode) {
-    pelajaran p;
-    p.namaMapel = nama;
-    p.kodeMapel = kode;
-    return p;
-}
+Pelajaran createPelajaran(string nama, string kode);
 
-void tampil_pelajaran(pelajaran pel) {
-    cout << "nama pelajaran : " << pel.namaMapel << endl;
-    cout << "nilai : " << pel.kodeMapel << endl;
-}
+void tampilPelajaran(Pelajaran p);
 
-int main() {
-    string namapel = "Struktur Data";
-    string kodepel = "STD";
-
-    pelajaran pel = create_pelajaran(namapel, kodepel);
-    tampil_pelajaran(pel);
-
-    return 0;
+#endif
 }
 ```
+
+
 #### Output:
 <img width="834" height="682" alt="Image" src="https://github.com/user-attachments/assets/55b39664-1c77-4454-b5f2-89fc182b5e44" />
 
