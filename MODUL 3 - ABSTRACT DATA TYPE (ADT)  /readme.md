@@ -268,4 +268,4 @@ Kode di atas berfungsi untuk menampilkan dua array 2 dimensi (A dan B), kemudian
 Kesimpulannya, praktikum ini menunjukkan bahwa bahasa C++ dapat digunakan untuk mengelola data secara terstruktur menggunakan variabel, fungsi, struct, array, dan pointer, serta memisahkan kode program agar lebih rapi dan mudah dipahami.
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+Rachman, D. A. Perkenalan Abstrak Data Type."Secara konsep, ADT adalah model matematika untuk tipe data yang fokus pada perilaku (Weiss, 2014)."
