@@ -258,14 +258,14 @@ int main() {
 #### Output:
 <img width="872" height="658" alt="Image" src="https://github.com/user-attachments/assets/dc19730e-938f-4c94-baad-edf1eeb01d70" />
 
-Kode di atas berfungsi untuk menampilkan dua array 2 dimensi (A dan B), kemudian menukar satu elemen di posisi tertentu antara kedua array tersebut. Selain itu, program juga menukar nilai dua variabel (x dan y) dengan bantuan pointer.
+Kode di atas berfungsi untuk menampilkan dua array 2 dimensi (A dan B), kemudian menukar seluruh isi dari kedua array tersebut. Setelah proses pertukaran, program menampilkan hasil akhir dari masing-masing array untuk memperlihatkan perubahan nilainya.
 
 #### Full code Screenshot:
 <img width="511" height="1055" alt="Image" src="https://github.com/user-attachments/assets/674afa20-5a95-4790-b09c-51f89d403881" />
 
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Kesimpulannya, praktikum ini menunjukkan bahwa bahasa C++ dapat digunakan untuk mengelola data secara terstruktur menggunakan variabel, fungsi, struct, array, dan pointer, serta memisahkan kode program agar lebih rapi dan mudah dipahami.
 
 ## Referensi
 [1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
