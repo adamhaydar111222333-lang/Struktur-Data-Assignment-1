@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul Pengenalan Bahasa C++ (1)</h1>
+# <h1 align="center">Laporan Praktikum Modul Pengenalan Bahasa C++ (2)</h1>
 <p align="center">Adam Haydar</p>
 
 ## Dasar Teori
@@ -240,6 +240,7 @@ Ketiga program C++ ini secara bersama-sama menunjukkan dasar-dasar dalam pemrogr
 
 ## Referensi
 Putra, M. T. D., Munawir, M., & Yuniarti, A. R. (2023). BELAJAR PEMROGRAMAN LANJUT DENGAN C++. (A.Pratama, komunikasi pribadi, 9 Oktober 2025).
+
 
 
 
