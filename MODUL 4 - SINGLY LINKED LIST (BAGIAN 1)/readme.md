@@ -2,8 +2,8 @@
 <p align="center">Adam Haydarr</p>
 
 ## Dasar Teori
+Linked list adalah struktur data yang terdiri dari elemen-elemen yang saling terhubung dan bersifat fleksibel karena dapat bertambah atau berkurang sesuai kebutuhan. Data di dalamnya bisa berupa data tunggal (misalnya nama bertipe *string*) atau data majemuk (misalnya data mahasiswa yang berisi nama, NIM, dan alamat dengan tipe data berbeda).
 
-Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri serta susunan yang terstruktur per topiknya.
 
 ## Guided 
 
