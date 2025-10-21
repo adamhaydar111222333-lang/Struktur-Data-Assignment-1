@@ -126,6 +126,7 @@ int main() {
 <img width="1230" height="207" alt="image" src="https://github.com/user-attachments/assets/f748c89e-95e8-4c39-a665-ccdbcad2811a" />
 
 
+
 Program ini dipakai untuk membuat dan menampilkan daftar data sederhana menggunakan singly linked list. Setiap kali ada data baru, datanya dimasukkan di bagian depan, jadi urutannya jadi terbalik dari saat dimasukkan. Hasil akhirnya, program menampilkan angka 9 12 8 0 2 di layar.
 
 #### Full code Screenshot:
@@ -295,6 +296,7 @@ int main() {
 
 #### Output:
 <img width="1235" height="311" alt="image" src="https://github.com/user-attachments/assets/36a32c4e-b103-40d6-8d5f-a2e55fe1e1d8" />
+
 
 
 Kesimpulannya, program ini digunakan untuk menghapus data dari sebuah **linked list** satu per satu. Pertama, data paling depan (9) dihapus, lalu data paling belakang (2), dan setelah itu data di tengah (8). Hasil akhirnya, list hanya tersisa **12 dan 0**, kemudian semua data dihapus sampai list benar-benar kosong.
