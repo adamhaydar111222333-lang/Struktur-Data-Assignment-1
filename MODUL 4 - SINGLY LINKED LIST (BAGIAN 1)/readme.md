@@ -130,7 +130,7 @@ int main() {
 Program ini dipakai untuk membuat dan menampilkan daftar data sederhana menggunakan singly linked list. Setiap kali ada data baru, datanya dimasukkan di bagian depan, jadi urutannya jadi terbalik dari saat dimasukkan. Hasil akhirnya, program menampilkan angka 9 12 8 0 2 di layar.
 
 #### Full code Screenshot:
-<img width="1913" height="1125" alt="image" src="https://github.com/user-attachments/assets/d2988d56-e324-481d-ac67-46701e39e626" />
+<img width="1912" height="1121" alt="image" src="https://github.com/user-attachments/assets/57fb7fb5-b007-4b72-9bd9-a9b24cdb3227" />
 
 ### 2. [Soal]
 **Singlylist.h**
