@@ -150,14 +150,12 @@ struct List {
     Node* head;
 };
 
-// Deklarasi fungsi dasar
 void createList(List &L);
 Node* createNode(int nilai);
 void deleteNode(Node* P);
 void insertFirst(List &L, Node* P);
 void printList(List L);
 
-// Fungsi untuk penghapusan dan hitung node
 void deleteFirst(List &L, Node* &P);
 void deleteLast(List &L, Node* &P);
 void deleteAfter(Node* prec, Node* &P);
