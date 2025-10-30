@@ -363,28 +363,117 @@ void FindNodeByRange(linkedlist list, float hargaAwal, float hargaAkhir) {
 }
 
 ```
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+**main.cpp**
+```C++
+#include "listBuah.h"
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    linkedlist List;
+    address nodeA, nodeB, nodeC, nodeD, nodeE = Nil;
+    createList(List);
+
+    dataBuah dtBuah;
+
+    nodeA = alokasi("Jeruk", 100, 3000);
+    nodeB = alokasi("Apel", 75, 4000);
+    nodeC = alokasi("Pir", 87, 5000);
+    nodeD = alokasi("Semangka", 43, 11500);
+    nodeE = alokasi("Durian", 15, 31450);
+
+    insertFirst(List, nodeA);
+    insertLast(List, nodeB);
+    insertAfter(List, nodeC, nodeA);
+    insertAfter(List, nodeD, nodeC);
+    insertLast(List, nodeE);
+
+    cout << "--- ISI LIST SETELAH DILAKUKAN INSERT ---" << endl;
+    printList(List);
+    cout << "Jumlah node : " << nbList(List) << endl;
+    cout << endl;
+
+   updateFirst(List);
+   updateLast(List);
+   updateAfter(List, nodeD);
+
+    cout << "--- ISI LIST SETELAH DILAKUKAN UPDATE ---" << endl;
+    printList(List);
+    cout << "Jumlah node : " << nbList(List) << endl;
+    cout << endl;
+
+    FindNodeByData(List, "Kelapa");
+    FindNodeByAddress(List, nodeC);
+    FindNodeByRange(List, 5000, 10000);
+
+    delFirst(List);
+    delLast(List);
+    delAfter(List, nodeD, nodeC);
+
+    cout << "--- ISI LIST SETELAH DILAKUKAN DELETE ---" << endl;
+    printList(List);
+    cout << "jumlah node : " << nbList(List) << endl;
+    cout << endl;
+
+    deleteList(List);
+    cout << "--- ISI LIST SETELAH DILAKUKAN HAPUS LIST ---" << endl;
+    printList(List);
+    cout << "jumlah node : " << nbList(List) << endl;
+    cout << endl;
+
+    return 0;
+}
+```
+Kode program ini menunjukkan cara mengatur data secara dinamis dan rapi dengan bantuan struktur data linked list.
 
 ## Unguided 
 
 ### 1. [Soal]
-
+**Singlylist.h**
 ```C++
+#ifndef SINGLYLIST_H
+#define SINGLYLIST_H
+
 #include <iostream>
 using namespace std;
 
-int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
-    return 0;
+#define Nil NULL
+
+typedef int infotype;
+typedef struct elmList *address;
+
+struct elmList {
+    infotype info;
+    address next;
+};
+
+struct List {
+    address first;
+};
+
+void createList(List &L);
+address alokasi(infotype x);
+void dealokasi(address P);
+void insertFirst(List &L, address P);
+void printInfo(List L);
+
+#endif
+
 }
 ```
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+<img width="802" height="197" alt="image" src="https://github.com/user-attachments/assets/2da78150-0c96-439e-9257-f085aa192c4e" />
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+
+Membuat struktur dasar Singly Linked List beserta fungsi dasar seperti createList, alokasi, insertFirst, dan printInfo.
+Hasilnya list berhasil terbentuk dan menampilkan urutan data 9 12 8 0 2
 
 #### Full code Screenshot:
-![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
+<img width="462" height="655" alt="image" src="https://github.com/user-attachments/assets/47ccc9d8-5ab1-4b4c-998f-ed666258cb7d" />
+<img width="538" height="924" alt="image" src="https://github.com/user-attachments/assets/8aec6e5b-25f3-48ab-88a8-2dcf4c623039" />
+<img width="510" height="618" alt="image" src="https://github.com/user-attachments/assets/40fae420-abe7-4cc8-848b-b21e0a75201c" />
+
 
 
 ## Kesimpulan
