@@ -461,6 +461,82 @@ void printInfo(List L);
 
 }
 ```
+**Singlylist.cpp**
+```C++
+#include "Singlylist.h"
+
+void createList(List &L) {
+    L.first = Nil;
+}
+
+address alokasi(infotype x) {
+    address P;
+    P = new elmList;
+    if (P != Nil) {
+        P->info = x;
+        P->next = Nil;
+    } else {
+        cout << "Alokasi gagal" << endl;
+    }
+    return P;
+}
+
+void dealokasi(address P) {
+    delete P;
+}
+
+void insertFirst(List &L, address P) {
+    if (L.first == Nil) {
+        L.first = P;
+    } else {
+        P->next = L.first;
+        L.first = P;
+    }
+}
+
+void printInfo(List L) {
+    address P = L.first;
+    if (P == Nil) {
+        cout << "List kosong" << endl;
+    } else {
+        while (P != Nil) {
+            cout << P->info << " ";
+            P = P->next;
+        }
+        cout << endl;
+    }
+}
+```
+**main.cpp**
+```C++
+#include "Singlylist.h"
+
+int main() {
+    List L;
+    address P1, P2, P3, P4, P5;
+
+    createList(L);
+
+    P1 = alokasi(2);
+    insertFirst(L, P1);
+
+    P2 = alokasi(0);
+    insertFirst(L, P2);
+
+    P3 = alokasi(8);
+    insertFirst(L, P3);
+
+    P4 = alokasi(12);
+    insertFirst(L, P4);
+
+    P5 = alokasi(9);
+    insertFirst(L, P5);
+
+    printInfo(L);
+
+    return 0;
+}
+```
 
 #### Output:
 <img width="802" height="197" alt="image" src="https://github.com/user-attachments/assets/2da78150-0c96-439e-9257-f085aa192c4e" />
