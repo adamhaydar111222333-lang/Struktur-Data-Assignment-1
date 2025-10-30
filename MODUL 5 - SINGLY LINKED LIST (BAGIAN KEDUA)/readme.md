@@ -767,5 +767,6 @@ Fungsi totalInfo digunakan untuk menjumlahkan semua nilai dari setiap node dalam
 Singly Linked List dapat digunakan untuk menyimpan data secara dinamis, menambah, mencari, dan mengolah isi list dengan mudah menggunakan pointer.
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
-
+[1] Mbejo, M. T., Nopa, L. A., Putri, J. S., & Risky, M. (2025). Analisis Struktur Data Linked List Dalam Pengolahan Data Mahasiswa. Jurnal Sains Informatika Terapan, 4(2), 441-444.
+[2] Sofianti, H. A., Manullang, Y. V., Tampubolon, N. A., Naibaho, L. H., & Gunawan, I. (2025). Implementasi Struktur Data Array Dan Linked List Dalam Pengelolaan Data Mahasiswa. Menulis: Jurnal Penelitian Nusantara, 1(6), 871-877.
+[3] Referensi dari laporan praktikum teman sekelas, Modul 5 Struktur Data, 2025.
