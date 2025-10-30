@@ -1,4 +1,4 @@
-# <h1 align="center">Modul SINGLY LINKED LIST (BAGIAN KEDUA)</h1>
+# <h1 align="center">SINGLY LINKED LIST (BAGIAN KEDUA)</h1>
 <p align="center">Adam Haydar</p>
 
 ## Dasar Teori
