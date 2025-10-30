@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul Pengenalan Bahasa C++ (1)</h1>
+# <h1 align="center">Laporan Praktikum Modul SINGLY LINKED LIST (BAGIAN KEDUA)  (1)</h1>
 <p align="center">Adam Haydar</p>
 
 ## Dasar Teori
@@ -473,6 +473,8 @@ Hasilnya list berhasil terbentuk dan menampilkan urutan data 9 12 8 0 2
 <img width="462" height="655" alt="image" src="https://github.com/user-attachments/assets/47ccc9d8-5ab1-4b4c-998f-ed666258cb7d" />
 <img width="538" height="924" alt="image" src="https://github.com/user-attachments/assets/8aec6e5b-25f3-48ab-88a8-2dcf4c623039" />
 <img width="510" height="618" alt="image" src="https://github.com/user-attachments/assets/40fae420-abe7-4cc8-848b-b21e0a75201c" />
+
+### 2.
 
 
 
