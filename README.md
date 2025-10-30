@@ -361,7 +361,6 @@ void FindNodeByRange(linkedlist list, float hargaAwal, float hargaAkhir) {
     }
     cout << endl;
 }
-
 ```
 **main.cpp**
 ```C++
@@ -462,9 +461,9 @@ void printInfo(List L);
 
 }
 ```
+
 #### Output:
 <img width="802" height="197" alt="image" src="https://github.com/user-attachments/assets/2da78150-0c96-439e-9257-f085aa192c4e" />
-
 
 Membuat struktur dasar Singly Linked List beserta fungsi dasar seperti createList, alokasi, insertFirst, dan printInfo.
 Hasilnya list berhasil terbentuk dan menampilkan urutan data 9 12 8 0 2
@@ -475,11 +474,297 @@ Hasilnya list berhasil terbentuk dan menampilkan urutan data 9 12 8 0 2
 <img width="510" height="618" alt="image" src="https://github.com/user-attachments/assets/40fae420-abe7-4cc8-848b-b21e0a75201c" />
 
 ### 2.
+**Singlylist.h**
+```C++
+#ifndef SINGLYLIST_H
+#define SINGLYLIST_H
 
+#include <iostream>
+using namespace std;
 
+#define Nil NULL
+
+typedef int infotype;
+typedef struct elmList *address;
+
+struct elmList {
+    infotype info;
+    address next;
+};
+
+struct List {
+    address first;
+};
+
+void createList(List &L);
+address alokasi(infotype x);
+void dealokasi(address P);
+void insertFirst(List &L, address P);
+void printInfo(List L);
+address findElm(List L, infotype x);
+
+#endif
+```
+**Singlylist.cpp**
+```C++
+#include "Singlylist.h"
+
+void createList(List &L) {
+    L.first = Nil;
+}
+
+address alokasi(infotype x) {
+    address P;
+    P = new elmList;
+    if (P != Nil) {
+        P->info = x;
+        P->next = Nil;
+    } else {
+        cout << "Alokasi gagal" << endl;
+    }
+    return P;
+}
+
+void dealokasi(address P) {
+    delete P;
+}
+
+void insertFirst(List &L, address P) {
+    if (L.first == Nil) {
+        L.first = P;
+    } else {
+        P->next = L.first;
+        L.first = P;
+    }
+}
+
+void printInfo(List L) {
+    address P = L.first;
+    if (P == Nil) {
+        cout << "List kosong" << endl;
+    } else {
+        while (P != Nil) {
+            cout << P->info << " ";
+            P = P->next;
+        }
+        cout << endl;
+    }
+}
+
+address findElm(List L, infotype x) {
+    address P = L.first;
+    while (P != Nil) {
+        if (P->info == x) {
+            return P;
+        }
+        P = P->next;
+    }
+    return Nil;
+}
+```
+**main.cpp**
+```C++
+#include "Singlylist.h"
+
+int main() {
+    List L;
+    address P1, P2, P3, P4, P5;
+
+    createList(L);
+
+    P1 = alokasi(2);
+    insertFirst(L, P1);
+
+    P2 = alokasi(0);
+    insertFirst(L, P2);
+
+    P3 = alokasi(8);
+    insertFirst(L, P3);
+
+    P4 = alokasi(12);
+    insertFirst(L, P4);
+
+    P5 = alokasi(9);
+    insertFirst(L, P5);
+
+    printInfo(L);
+
+    address hasil = findElm(L, 8);
+    if (hasil != Nil) {
+        cout << "8 ditemukan dalam list" << endl;
+    } else {
+        cout << "8 tidak ditemukan" << endl;
+    }
+
+    return 0;
+}
+```
+
+#### Output:
+<img width="744" height="237" alt="image" src="https://github.com/user-attachments/assets/9fa514bc-161d-44da-a779-f553f1330bd3" />
+
+Fungsi findElm digunakan untuk mencari data tertentu di dalam list. Dengan mencari nilai 8, program menampilkan “8 ditemukan dalam list".
+
+#### Full code Screenshot:
+<img width="576" height="960" alt="image" src="https://github.com/user-attachments/assets/936e82b0-b146-4128-8992-2934eaea302d" />
+<img width="352" height="941" alt="image" src="https://github.com/user-attachments/assets/9290d149-69e7-4754-927d-c355c021d20b" />
+<img width="589" height="847" alt="image" src="https://github.com/user-attachments/assets/282d8d27-ed83-4e69-b1c2-555b7ede180b" />
+
+### 3.
+**Singlylist.h**
+```C++
+#ifndef SINGLYLIST_H
+#define SINGLYLIST_H
+
+#include <iostream>
+using namespace std;
+
+#define Nil NULL
+
+typedef int infotype;
+typedef struct elmList *address;
+
+struct elmList {
+    infotype info;
+    address next;
+};
+
+struct List {
+    address first;
+};
+
+void createList(List &L);
+address alokasi(infotype x);
+void dealokasi(address P);
+void insertFirst(List &L, address P);
+void printInfo(List L);
+address findElm(List L, infotype x);
+int totalInfo(List L);
+
+#endif
+```
+**Singlylist.cpp**
+```C++
+#include "Singlylist.h"
+
+void createList(List &L) {
+    L.first = Nil;
+}
+
+address alokasi(infotype x) {
+    address P;
+    P = new elmList;
+    if (P != Nil) {
+        P->info = x;
+        P->next = Nil;
+    } else {
+        cout << "Alokasi gagal" << endl;
+    }
+    return P;
+}
+
+void dealokasi(address P) {
+    delete P;
+}
+
+void insertFirst(List &L, address P) {
+    if (L.first == Nil) {
+        L.first = P;
+    } else {
+        P->next = L.first;
+        L.first = P;
+    }
+}
+
+void printInfo(List L) {
+    address P = L.first;
+    if (P == Nil) {
+        cout << "List kosong" << endl;
+    } else {
+        while (P != Nil) {
+            cout << P->info << " ";
+            P = P->next;
+        }
+        cout << endl;
+    }
+}
+
+address findElm(List L, infotype x) {
+    address P = L.first;
+    while (P != Nil) {
+        if (P->info == x) {
+            return P;
+        }
+        P = P->next;
+    }
+    return Nil;
+}
+
+int totalInfo(List L) {
+    int total = 0;
+    address P = L.first;
+
+    while (P != Nil) {
+        total += P->info;
+        P = P->next;
+    }
+
+    return total;
+}
+```
+**main.cpp**
+```C++
+#include "Singlylist.h"
+
+int main() {
+    List L;
+    address P1, P2, P3, P4, P5;
+
+    createList(L);
+
+    P1 = alokasi(2);
+    insertFirst(L, P1);
+
+    P2 = alokasi(0);
+    insertFirst(L, P2);
+
+    P3 = alokasi(8);
+    insertFirst(L, P3);
+
+    P4 = alokasi(12);
+    insertFirst(L, P4);
+
+    P5 = alokasi(9);
+    insertFirst(L, P5);
+
+    printInfo(L);
+
+    address hasil = findElm(L, 8);
+    if (hasil != Nil) {
+        cout << "8 ditemukan dalam list" << endl;
+    } else {
+        cout << "8 tidak ditemukan" << endl;
+    }
+
+    int jumlah = totalInfo(L);
+    cout << "Total info dari kelima elemen adalah " << jumlah << endl;
+
+    return 0;
+}
+```
+
+#### Output:
+<img width="795" height="269" alt="image" src="https://github.com/user-attachments/assets/99636cdb-6cb8-4ee9-96a0-29912ff7cb70" />
+
+Fungsi totalInfo digunakan untuk menjumlahkan semua nilai dari setiap node dalam list. Dari data 9, 12, 8, 0, dan 2 diperoleh total 31
+
+#### Full code Screenshot:
+<img width="548" height="889" alt="image" src="https://github.com/user-attachments/assets/cd96d75c-ac52-44be-ae03-ea8cc5945d15" />
+<img width="277" height="950" alt="image" src="https://github.com/user-attachments/assets/9eed38be-fa11-4c51-bb6b-7788c73a77e1" />
+<img width="784" height="914" alt="image" src="https://github.com/user-attachments/assets/b86fbb00-11fa-4249-b702-cdd13dfc6b38" />
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Singly Linked List dapat digunakan untuk menyimpan data secara dinamis, menambah, mencari, dan mengolah isi list dengan mudah menggunakan pointer.
 
 ## Referensi
 [1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
