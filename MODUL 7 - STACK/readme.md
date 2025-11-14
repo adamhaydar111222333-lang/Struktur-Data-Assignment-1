@@ -295,11 +295,11 @@ Program membuat sebuah stack, otomatis mengisi stack dengan angka 4729601, lalu 
 <img width="686" height="976" alt="image" src="https://github.com/user-attachments/assets/e254b44d-16fd-482f-89c1-38b53d234b50" />
 <img width="1064" height="765" alt="image" src="https://github.com/user-attachments/assets/18465811-6668-4e64-ae68-38dac0c2a8c2" />
 
-
-
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Cara kerja stack yang memakai prinsip LIFO, yaitu data yang masuk terakhir akan keluar duluan. Saya mencoba operasi dasar seperti push dan pop, lalu membuat fungsi untuk menampilkan isi stack dan membalik urutannya. Hasil percobaan menunjukkan bahwa stack bekerja sesuai logikanya dan proses pembalikan data berhasil. Praktikum ini membantu saya lebih paham cara menggunakan stack dalam program.
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] Yulyanto, A. (2012). Aplikasi Simulasi Pembelajaran Struktur Data Materi Stack (Doctoral dissertation, Universitas Mercu Buana).
+[2] Deepseek
+[3] Nopal
 
