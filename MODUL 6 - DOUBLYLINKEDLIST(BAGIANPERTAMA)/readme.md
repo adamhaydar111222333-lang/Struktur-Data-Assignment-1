@@ -1,6 +1,6 @@
 # <h1 align="center">DOUBLYLINKEDLIST(BAGIANPERTAMA)</h1>
 <p align="center">Adam Haydar</p>
-
+ 
 ## Dasar Teori
 
 Doubly Linked List adalah struktur data di mana setiap elemen memiliki dua penunjuk: satu menunjuk ke elemen sebelumnya (prev) dan satu lagi menunjuk ke elemen setelahnya (next).
