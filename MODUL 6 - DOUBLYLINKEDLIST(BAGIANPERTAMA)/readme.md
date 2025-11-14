@@ -282,4 +282,6 @@ Doubly linked list lebih powerful daripada singly linked list karena bisa naviga
 Doubly Linked List memberikan solusi yang lebih powerful dibandingkan Singly Linked List untuk kasus-kasus yang membutuhkan akses dua arah, meskipun membutuhkan memori lebih besar untuk menyimpan pointer tambahan. Struktur data ini sangat efektif untuk aplikasi yang memerlukan operasi insert dan delete yang pada berbagai posisi dalam list.
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] Sihombing, J. (2019). Penerapan stack dan queue pada array dan linked list dalam java. INFOKOM (Informatika & Komputer), 7(2), 15-24.
+[2] Teman 
+[3] Gemini
