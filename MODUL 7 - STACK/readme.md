@@ -288,10 +288,13 @@ int main() {
 <img width="947" height="348" alt="image" src="https://github.com/user-attachments/assets/a41acabe-ceab-4f86-b095-e645a3cdcccc" />
 
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Program membuat sebuah stack, otomatis mengisi stack dengan angka 4729601, lalu menampilkan isi stack dari atas ke bawah. Setelah itu, program membalik urutan stack menggunakan stack sementara, dan menampilkan hasilnya.
 
 #### Full code Screenshot:
-![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
+<img width="1127" height="790" alt="image" src="https://github.com/user-attachments/assets/d3fbe0d2-bc53-41ed-917d-1a86686e530b" />
+<img width="686" height="976" alt="image" src="https://github.com/user-attachments/assets/e254b44d-16fd-482f-89c1-38b53d234b50" />
+<img width="1064" height="765" alt="image" src="https://github.com/user-attachments/assets/18465811-6668-4e64-ae68-38dac0c2a8c2" />
+
 
 
 ## Kesimpulan
