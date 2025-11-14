@@ -1,4 +1,4 @@
-# <h1 align="center">DOUBLYLINKEDLIST(BAGIANPERTAMA))</h1>
+# <h1 align="center">DOUBLYLINKEDLIST(BAGIANPERTAMA)</h1>
 <p align="center">Adam Haydar</p>
 
 ## Dasar Teori
@@ -22,7 +22,7 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 
 ## Unguided 
 
-### 1. [Soal]**
+### 1. [Soal]
 **Doublylist.h**
 ```C++
 #ifndef DOUBLYLIST_H
