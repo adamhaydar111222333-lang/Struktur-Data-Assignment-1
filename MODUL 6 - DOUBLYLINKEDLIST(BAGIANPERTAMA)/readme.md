@@ -279,7 +279,7 @@ Doubly linked list lebih powerful daripada singly linked list karena bisa naviga
 
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Doubly Linked List memberikan solusi yang lebih powerful dibandingkan Singly Linked List untuk kasus-kasus yang membutuhkan akses dua arah, meskipun membutuhkan memori lebih besar untuk menyimpan pointer tambahan. Struktur data ini sangat efektif untuk aplikasi yang memerlukan operasi insert dan delete yang pada berbagai posisi dalam list.
 
 ## Referensi
 [1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
