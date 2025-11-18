@@ -92,21 +92,21 @@ Program ini mendemonstrasikan cara membuat dan memanipulasi struktur data double
 ```C++
 #ifndef DOUBLYLIST_H
 #define DOUBLYLIST_H
-#include <string>
-#include <iostream>
 
+#include <iostream>
+#include <string>
 using namespace std;
 
-struct infotype {
+struct Kendaraan {
     string nopol;
     string warna;
-    int thnBuat;
+    int tahun;
 };
 
-typedef struct elmlist *address;
+typedef struct Node* address;
 
-struct elmlist {
-    infotype info;
+struct Node {
+    Kendaraan data;
     address next;
     address prev;
 };
@@ -116,62 +116,50 @@ struct List {
     address last;
 };
 
-void CreateList(List &L);
-address alokasi(infotype x);
-void printfInfo(List L);
+void createList(List &L);
+address newNode(Kendaraan x);
+void printList(List L);
 void insertLast(List &L, address P);
-address findElm(List L, string nopol);
-void deleteFirst(List &L, address &P);
-void deleteLast(List &L, address &P);
-void deleteAfter(address Prec, address &P);
+address find(List L, string nopol);
+
 void deleteByNopol(List &L, string nopol);
 
 #endif
-}
 ```
 
 **Doublylist.cpp**
 ```C++
-#include "Doublylist.h"
-#include <iostream>
-
+#include "DoublyList.h"
 using namespace std;
 
-void CreateList(List &L) {
+void createList(List &L) {
     L.first = NULL;
     L.last = NULL;
 }
 
-address alokasi(infotype x) {
-    address P = new elmlist;
-    P->info = x;
+address newNode(Kendaraan x) {
+    address P = new Node;
+    P->data = x;
     P->next = NULL;
     P->prev = NULL;
     return P;
 }
 
-void printfInfo(List L) {
-    cout << "\nDATA LIST 1\n";
-    
-    if (L.first == NULL) {
-        cout << "List kosong!\n";
-        return;
-    }
-    
-    address P = L.first;
+void printList(List L) {
+    cout << "DATA LIST 1\n\n";
+    address P = L.last;
     while (P != NULL) {
-        cout << "no polisi : " << P->info.nopol << endl;
-        cout << "warna     : " << P->info.warna << endl;
-        cout << "tahun     : " << P->info.thnBuat << endl;
-        if (P->next != NULL) cout << endl; // Beri jarak antar data
-        P = P->next;
+        cout << "no polisi : " << P->data.nopol << endl;
+        cout << "warna     : " << P->data.warna << endl;
+        cout << "tahun     : " << P->data.tahun << endl;
+        if (P->prev != NULL) cout << endl;
+        P = P->prev;
     }
 }
 
 void insertLast(List &L, address P) {
     if (L.first == NULL) {
-        L.first = P;
-        L.last = P;
+        L.first = L.last = P;
     } else {
         L.last->next = P;
         P->prev = L.last;
@@ -179,161 +167,115 @@ void insertLast(List &L, address P) {
     }
 }
 
-address findElm(List L, string nopol) {
+address find(List L, string nopol) {
     address P = L.first;
     while (P != NULL) {
-        if (P->info.nopol == nopol) {
-            return P;
-        }
+        if (P->data.nopol == nopol) return P;
         P = P->next;
     }
     return NULL;
 }
 
-void deleteFirst(List &L, address &P) {
-    if (L.first == NULL) return;
-    
-    P = L.first;
-    if (L.first == L.last) {
-        L.first = NULL;
-        L.last = NULL;
-    } else {
-        L.first = L.first->next;
-        L.first->prev = NULL;
-    }
-    P->next = NULL;
-}
-
-void deleteLast(List &L, address &P) {
-    if (L.first == NULL) return;
-    
-    P = L.last;
-    if (L.first == L.last) {
-        L.first = NULL;
-        L.last = NULL;
-    } else {
-        L.last = L.last->prev;
-        L.last->next = NULL;
-    }
-    P->prev = NULL;
-}
-
-void deleteAfter(address Prec, address &P) {
-    if (Prec == NULL || Prec->next == NULL) return;
-    
-    P = Prec->next;
-    Prec->next = P->next;
-    if (P->next != NULL) {
-        P->next->prev = Prec;
-    }
-    P->next = NULL;
-    P->prev = NULL;
-}
-
 void deleteByNopol(List &L, string nopol) {
-    address P = findElm(L, nopol);
-    
+    address P = find(L, nopol);
     if (P == NULL) {
-        cout << "Data dengan nomor polisi " << nopol << " tidak ditemukan!\n";
+        cout << "Data tidak ditemukan\n";
         return;
     }
-    
-    if (P == L.first) {
-        deleteFirst(L, P);
-    } else if (P == L.last) {
-        deleteLast(L, P);
-    } else {
-        deleteAfter(P->prev, P);
+
+    if (P == L.first && P == L.last) {
+        L.first = L.last = NULL;
+    } 
+    else if (P == L.first) {
+        L.first = P->next;
+        L.first->prev = NULL;
+    } 
+    else if (P == L.last) {
+        L.last = P->prev;
+        L.last->next = NULL;
+    } 
+    else {
+        P->prev->next = P->next;
+        P->next->prev = P->prev;
     }
-    
+
+    cout << "Data dengan nomor polisi " << nopol << " berhasil dihapus.\n\n";
     delete P;
-    cout << "Data dengan nomor polisi " << nopol << " berhasil dihapus.\n";
 }
 ```
 
 **main.c**
 ```C++
 #include <iostream>
-#include "Doublylist.h"
-
+#include "DoublyList.h"
 using namespace std;
 
 int main() {
     List L;
-    CreateList(L);
-    
+    createList(L);
+
+    Kendaraan x;
+    string nopol;
+
     cout << "masukkan nomor polisi: ";
-    string nopol, warna;
-    int tahun;
-    
-    cin >> nopol;
+    cin >> x.nopol;
     cout << "masukkan warna kendaraan: ";
-    cin >> warna;
+    cin >> x.warna;
     cout << "masukkan tahun kendaraan: ";
-    cin >> tahun;
-    
-    infotype k1 = {nopol, warna, tahun};
-    address p1 = alokasi(k1);
-    insertLast(L, p1);
+    cin >> x.tahun;
+    insertLast(L, newNode(x));
     cout << endl;
-    
+
     cout << "masukkan nomor polisi: ";
-    cin >> nopol;
+    cin >> x.nopol;
     cout << "masukkan warna kendaraan: ";
-    cin >> warna;
+    cin >> x.warna;
     cout << "masukkan tahun kendaraan: ";
-    cin >> tahun;
-    
-    infotype k2 = {nopol, warna, tahun};
-    address p2 = alokasi(k2);
-    insertLast(L, p2);
+    cin >> x.tahun;
+    insertLast(L, newNode(x));
     cout << endl;
-    
+
     cout << "masukkan nomor polisi: ";
     cin >> nopol;
-    if (findElm(L, nopol) != NULL) {
-        cout << "masukkan warna kendaraan: ";
-        cin >> warna;
-        cout << "masukkan tahun kendaraan: ";
-        cin >> tahun;
-        cout << "nomor polisi sudah terdaftar\n" << endl;
+    if (find(L, nopol) != NULL) {
+        cout << "nomor polisi sudah terdaftar\n\n";
     }
-    
+
     cout << "masukkan nomor polisi: ";
-    cin >> nopol;
+    cin >> x.nopol;
     cout << "masukkan warna kendaraan: ";
-    cin >> warna;
+    cin >> x.warna;
     cout << "masukkan tahun kendaraan: ";
-    cin >> tahun;
-    
-    infotype k4 = {nopol, warna, tahun};
-    address p4 = alokasi(k4);
-    insertLast(L, p4);
+    cin >> x.tahun;
+    insertLast(L, newNode(x));
     cout << endl;
-    
-    printfInfo(L);
-    
-    cout << "\n\nNasukkan Nomor Polisi yang dicari : ";
+
+    printList(L);
+    cout << endl;
+
+    cout << "Masukkan Nomor Polisi yang dicari  : ";
     cin >> nopol;
-    
-    address found = findElm(L, nopol);
-    if (found != NULL) {
-        cout << "Nomor Polisi : " << found->info.nopol << endl;
-        cout << "warna        : " << found->info.warna << endl;
-        cout << "Tahun        : " << found->info.thnBuat << endl;
+
+    address P = find(L, nopol);
+    if (P != NULL) {
+        cout << "\nNomor Polisi : " << P->data.nopol << endl;
+        cout << "Warna        : " << P->data.warna << endl;
+        cout << "Tahun        : " << P->data.tahun << endl;
     }
-    
-    cout << "\n\nMasukkan Nomor Polisi yang akan dihapus : ";
+    cout << endl;
+
+    cout << "Masukkan Nomor Polisi yang akan dihapus  : ";
     cin >> nopol;
     deleteByNopol(L, nopol);
-    
-    printfInfo(L);
-    
+
+    printList(L);
+
     return 0;
 }
 ```
 #### Output:
-<img width="405" height="860" alt="image" src="https://github.com/user-attachments/assets/46d5e914-404a-45fc-b4fc-e802b1bf08f0" />
+<img width="1007" height="1125" alt="image" src="https://github.com/user-attachments/assets/e0f1095f-9481-445a-ace2-acb21c9bbf88" />
+
     
 Doubly linked list lebih powerful daripada singly linked list karena bisa navigasi dua arah, membuat operasi insert/delete lebih efisien, terutama untuk operasi yang membutuhkan akses elemen sebelumnya.
 
