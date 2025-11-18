@@ -280,9 +280,10 @@ int main() {
 Doubly linked list lebih powerful daripada singly linked list karena bisa navigasi dua arah, membuat operasi insert/delete lebih efisien, terutama untuk operasi yang membutuhkan akses elemen sebelumnya.
 
 #### Full code Screenshot:
-<img width="791" height="878" alt="image" src="https://github.com/user-attachments/assets/45d796ef-06a3-430e-a816-80194d40fd4a" />
-<img width="487" height="1032" alt="image" src="https://github.com/user-attachments/assets/158a5cb6-0964-4d32-93bf-64522937db4d" />
-<img width="975" height="1033" alt="image" src="https://github.com/user-attachments/assets/df925077-499b-465b-89ae-8a6e98a05dc9" />
+<img width="1012" height="1097" alt="image" src="https://github.com/user-attachments/assets/0a0df2e1-1e40-4368-be47-2e8d09c545bd" />
+<img width="785" height="1129" alt="image" src="https://github.com/user-attachments/assets/b97af353-4157-458f-869e-c11a14a1dc1e" />
+<img width="673" height="1018" alt="image" src="https://github.com/user-attachments/assets/9e339d5e-a6d1-49fc-a70e-d7df37bd3946" />
+
 
 
 ## Kesimpulan
