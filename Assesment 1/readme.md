@@ -136,7 +136,8 @@ int main(){
 **Output :**
 <img width="691" height="804" alt="image" src="https://github.com/user-attachments/assets/8cd66742-03c3-452d-856d-266f84eaf7e7" />
 
-**Soal Nomor 2 (Double Linked List) **
+**Soal Nomor 2 (Double Linked List)**
+
 **Program :**
 **DLLPlaylist.h**
 ```C++
@@ -296,7 +297,8 @@ int main(){
 **Output :**
 <img width="794" height="905" alt="image" src="https://github.com/user-attachments/assets/fe7358c8-534d-4906-bc52-8663f55e93fc" />
 
-**Soal Nomor 3 (Stack) **
+**Soal Nomor 3 (Stack)**
+
 **Program : **
 ```C++
     #ifndef STACKMAHASISWA_H
