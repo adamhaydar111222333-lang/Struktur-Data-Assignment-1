@@ -299,7 +299,7 @@ int main(){
 
 **Soal Nomor 3 (Stack)**
 
-**Program : **
+**Program :**
 ```C++
     #ifndef STACKMAHASISWA_H
     #define STACKMAHASISWA_H
@@ -432,7 +432,8 @@ int main(){
 **Output :**
 <img width="741" height="948" alt="image" src="https://github.com/user-attachments/assets/536ace04-68d4-4032-af2a-c306d9c4abbc" />
 
-**Soal Nomor 4 (Queue) **
+**Soal Nomor 4 (Queue)**
+
 **Program :**
 **QueuePengiriman.h**
 ```C++
