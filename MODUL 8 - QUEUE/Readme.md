@@ -153,15 +153,20 @@ int main() {
 <img width="794" height="538" alt="image" src="https://github.com/user-attachments/assets/30568e51-4948-478f-8b72-95ada841fa61" />
 
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Program ini memperlihatkan cara kerja antrian FIFO, yaitu data masuk dari belakang, keluar dari depan, dan akhirnya antrian kembali kosong.
 
 #### Full code Screenshot:
-![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
+<img width="1088" height="902" alt="image" src="https://github.com/user-attachments/assets/50db6840-1d56-4fed-ac30-3f9ec094fef2" />
+<img width="638" height="989" alt="image" src="https://github.com/user-attachments/assets/f0c7961f-240c-40b2-b3de-1308e28519b0" />
+<img width="1120" height="861" alt="image" src="https://github.com/user-attachments/assets/de2f0ef5-105c-4c2b-bec8-3aa7141728c7" />
+
 
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+queue dapat diimplementasikan dengan cara head tetap di indeks 0, tail bergerak di belakang, dan setiap dequeue menggeser elemen ke kiri sehingga urutan data selalu rapi dan tetap mengikuti prinsip First In First Out.
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] Dicoding Team. (2024, 15 Maret). Mengenal Struktur Data Queue: Konsep FIFO dan Implementasinya. Dicoding. https://www.dicoding.com/blog/struktur-data-queue/
+[2] Akhdan
+[3] Ai
 
