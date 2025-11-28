@@ -3,7 +3,7 @@
 
 ## Dasar Teori
 
-Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri serta susunan yang terstruktur per topiknya.
+Rekursif itu proses di mana suatu fungsi atau prosedur memanggil dirinya sendiri, dan pemakaiannya dalam sub program bikin kode lebih rapi, terbagi-bagi, dan bisa dipakai ulang tanpa nulis perintah yang sama berkali-kali.
 
 ## Guided 
 
@@ -46,5 +46,7 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] Azwanti, N., & Putria, N. E. (2024). Analisis Kepuasan Customer pada Sdtechnology Computer dengan Algoritma Decision Tree. Jurnal Desain Dan Analisis Teknologi, 3(2), 137-148.
+[2] Teman sekelas
+[3] Ai
 
