@@ -1,5 +1,5 @@
 # <h1 align="center">TREE (BAGIAN PERTAMA)</h1>
-<p align="center">Arvinanto Bahtiar</p>
+<p align="center">Adam Haydar</p>
 
 ## Dasar Teori
 
