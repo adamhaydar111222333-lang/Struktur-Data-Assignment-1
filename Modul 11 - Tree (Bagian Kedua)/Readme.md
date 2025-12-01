@@ -46,6 +46,6 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
 
 ## Referensi
-[1] Teman
+[1] Teman,
 [2] Djayusman, D., Suhartini, I., Gunawan, F. N., Alhakim, N. T., & Gunawan, T. (2021). IMPLEMENTASI STRUKTUR DATA TREE PADA GAME SNAKE DENGAN C. Jurnal Digit: Digital of Information Technology, 11(1), 20-27.
 
