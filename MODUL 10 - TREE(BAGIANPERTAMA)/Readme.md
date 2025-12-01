@@ -24,22 +24,127 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 
 ### 1. [Soal]
 
+**bstree.h**
 ```C++
+#ifndef BSTREE_H
+#define BSTREE_H 
+
 #include <iostream>
 using namespace std;
 
+#define Nil NULL
+
+typedef int infotype;
+typedef struct Node* address;
+
+struct Node {
+    infotype info;
+    address left;
+    address right;
+};
+
+address alokasi(infotype x);
+
+void insertNode(address &root, infotype x);
+
+void printInOrderStrip(address root);
+
+int hitungJumlahNode(address root);
+int hitungTotalInfo(address root);
+int hitungKedalaman(address root);
+
+#endif
+}
+```
+**bstree.cpp**
+```C++
+#include "bstree.h"
+
+address alokasi(infotype x) {
+    address P = new Node;
+    if (P != Nil) {
+        P->info = x;
+        P->left = Nil;
+        P->right = Nil;
+    }
+    return P;
+}
+
+void insertNode(address &root, infotype x) {
+    if (root == Nil) {
+        root = alokasi(x);
+        return;
+    }
+
+    if (x < root->info) {
+        insertNode(root->left, x);
+    } else if (x > root->info) {
+        insertNode(root->right, x);
+    }
+}
+
+void printInOrderStrip(address root) {
+    if (root == Nil) return;
+    printInOrderStrip(root->left);
+    cout << root->info << " - ";
+    printInOrderStrip(root->right);
+}
+
+int hitungJumlahNode(address root) {
+    if (root == Nil) return 0;
+    return 1 + hitungJumlahNode(root->left) + hitungJumlahNode(root->right);
+}
+
+int hitungTotalInfo(address root) {
+    if (root == Nil) return 0;
+    return root->info + hitungTotalInfo(root->left) + hitungTotalInfo(root->right);
+}
+
+int hitungKedalaman(address root) {
+    if (root == Nil) return 0;
+    int kiri = hitungKedalaman(root->left);
+    int kanan = hitungKedalaman(root->right);
+    if (kiri > kanan) return kiri + 1;
+    else return kanan + 1;
+}
+```
+**main.cpp**
+```C++
+#include <iostream>
+#include "bstree.h"
+using namespace std;
+
 int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
+    cout << "Hello world!" << endl;
+
+    address root = Nil;
+
+    int data[] = {1, 2, 6, 4, 5, 3, 6, 7};
+    int n = 8;
+
+    for (int i = 0; i < n; i++) {
+        insertNode(root, data[i]);
+    }
+
+    printInOrderStrip(root);
+    cout << endl;
+
+    cout << "kedalaman : " << hitungKedalaman(root) << endl;
+    cout << "jumlah node : " << hitungJumlahNode(root) << endl;
+    cout << "total : " << hitungTotalInfo(root) << endl;
+
     return 0;
 }
 ```
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+<img width="696" height="297" alt="image" src="https://github.com/user-attachments/assets/01d98a62-ab9e-4d45-80ef-cef44d07ee10" />
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Program ini bikin dan ngolah Binary Search Tree (BST) dari data 1, 2, 6, 4, 5, 3, 6, 7, lalu menampilkan isi tree secara inorder (jadi urut: 1 - 2 - 3 - 4 - 5 - 6 - 7 -), sambil menghitung kedalaman pohon, jumlah node, dan total semua nilai di dalam tree.
 
 #### Full code Screenshot:
-![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
+<img width="1103" height="1027" alt="image" src="https://github.com/user-attachments/assets/0a9ef4a9-cf6b-409e-ad74-dbe189bc8b6c" />
+<img width="1051" height="1089" alt="image" src="https://github.com/user-attachments/assets/40215a8b-6282-4549-9eff-f43946cf0ea6" />
+<img width="1271" height="923" alt="image" src="https://github.com/user-attachments/assets/278d147c-18f4-4bc0-b459-492fa58534ef" />
 
 
 ## Kesimpulan
