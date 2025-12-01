@@ -556,7 +556,7 @@ Program ini bikin dan ngolah Binary Search Tree (BST) dari data 1, 2, 6, 4, 5, 3
 
 
 ## Kesimpulan
-Cara kerja fungsi rekursif dan Binary Search Tree. Ternyata dengan BST, data bisa disimpan secara terstruktur dan bisa ditampilkan terurut hanya dengan traversal inorder. Selain itu, lewat beberapa fungsi rekursif sederhana, kita bisa tahu kedalaman, jumlah node, dan total nilai dalam tree, dan pembagian program ke dalam beberapa file bikin kode jadi lebih rapi dan mudah diatur.
+Rekursif dipakai buat ngolah Binary Search Tree (BST). Dengan BST, data disimpan rapi dan bisa ditampilkan urut pakai inorder. Pakai beberapa fungsi rekursif, kita juga bisa tahu kedalaman tree, jumlah node, dan total nilainya. Selain itu, program yang dibagi ke beberapa file bikin kodenya lebih rapi dan gampang diatur.
 
 ## Referensi
 [1] Azwanti, N., & Putria, N. E. (2024). Analisis Kepuasan Customer pada Sdtechnology Computer dengan Algoritma Decision Tree. Jurnal Desain Dan Analisis Teknologi, 3(2), 137-148.
