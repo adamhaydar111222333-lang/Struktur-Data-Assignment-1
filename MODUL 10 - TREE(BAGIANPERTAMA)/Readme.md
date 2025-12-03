@@ -426,7 +426,7 @@ int height(BinTree tree){ //mengembalikan jumlah level tree
     cout << endl;
 }
 ```
-Kode ai atas dipakai untuk membuat dan nyobain Binary Search Tree (BST) yang lengkap. Kita bisa nambah, hapus, dan cari data, lihat isi tree dengan preorder, inorder, postorder, terus tahu berapa banyak node, tinggi tree, sama nilai paling kiri dan paling kanan, semua lewat menu di main.cpp. Dari sini kita jadi lebih paham cara kerja BST secara praktik, dan bukan cuma teori.
+Kode di atas dipakai untuk membuat dan nyobain Binary Search Tree (BST) yang lengkap. Kita bisa nambah, hapus, dan cari data, lihat isi tree dengan preorder, inorder, postorder, terus tahu berapa banyak node, tinggi tree, sama nilai paling kiri dan paling kanan, semua lewat menu di main.cpp. Dari sini kita jadi lebih paham cara kerja BST secara praktik, dan bukan cuma teori.
 
 ## Unguided 
 
