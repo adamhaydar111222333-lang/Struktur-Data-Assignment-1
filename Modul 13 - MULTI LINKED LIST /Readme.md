@@ -151,9 +151,10 @@ Kode ini menunjukkan cara menambahkan data mahasiswa ke dalam single linked list
 
 
 
-
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Praktikum ini membuat saya memahami cara kerja Multi Linked List dan cara memasukkan data ke dalam sebuah linked list, khususnya bagaimana menambah data di awal, akhir, dan setelah elemen tertentu serta menampilkannya kembali secara berurutan.
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1]Syahputra, F., Sabrina, E., Ilham, M., Saputra, R. A., & Sitepu, Z. B. (2025). Penerapan Ai Di Platform Linkedin Learning Untuk Meningkatkan Keterampilan Profesional Mahasiswa: Penelitian. Jurnal Pengabdian Masyarakat dan Riset Pendidikan, 3(3), 327-332.
+[2] bayu adi (teman sekelas)
+[3] gemini 
