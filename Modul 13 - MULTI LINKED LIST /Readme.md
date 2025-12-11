@@ -149,10 +149,8 @@ Kode ini menunjukkan cara menambahkan data mahasiswa ke dalam single linked list
 <img width="1090" height="910" alt="image" src="https://github.com/user-attachments/assets/5b516a50-2ad2-4516-be48-c2c142f27d6e" />
 
 
-
-
 ## Kesimpulan
-Praktikum ini membuat saya memahami cara kerja Multi Linked List dan cara memasukkan data ke dalam sebuah linked list, khususnya bagaimana menambah data di awal, akhir, dan setelah elemen tertentu serta menampilkannya kembali secara berurutan.
+Praktikum ini memahami cara kerja Multi Linked List dan cara memasukkan data ke dalam sebuah linked list, khususnya bagaimana menambah data di awal, akhir, dan setelah elemen tertentu serta menampilkannya kembali secara berurutan.
 
 ## Referensi
 [1]Syahputra, F., Sabrina, E., Ilham, M., Saputra, R. A., & Sitepu, Z. B. (2025). Penerapan Ai Di Platform Linkedin Learning Untuk Meningkatkan Keterampilan Profesional Mahasiswa: Penelitian. Jurnal Pengabdian Masyarakat dan Riset Pendidikan, 3(3), 327-332.
