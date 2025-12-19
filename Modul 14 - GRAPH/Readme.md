@@ -3,7 +3,7 @@
 
 ## Dasar Teori
 
-Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri serta susunan yang terstruktur per topiknya.
+Graph adalah kumpulan titik dan garis penghubung. Contohnya, tempat kost dan Common Lab adalah titik, sedangkan jalan yang menghubungkannya adalah garis penghubung.
 
 ## Guided 
 
@@ -46,4 +46,6 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] Renaldi, R. (2014). IMPLEMENTASI MEDIA ANIMASI ROTOSCOPING GUNA MENINGKATKAN PEMAHAMAN MATERI GRAPH PADA MATA KULIAH STRUKTUR DATA (Doctoral dissertation, Universitas Pendidikan Indonesia).
+[2] Teman sekelas
+[3] Ai
