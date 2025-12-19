@@ -174,18 +174,19 @@ int main() {
     return 0;
 }
 ```
-```
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+<img width="1371" height="249" alt="image" src="https://github.com/user-attachments/assets/fa2c5cf0-2f84-4bcf-be2a-6140dbf22ed4" />
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Kode diatas digunakan untuk membuat dan mengelola graph yang berisi beberapa titik (node) dan hubungan antar titik. Program bisa menambah node, menghubungkan antar node, lalu menampilkan isinya. Selain itu, program juga bisa menelusuri graph dengan dua cara, yaitu DFS dan BFS, untuk melihat urutan kunjungan node dari titik awal.
 
 #### Full code Screenshot:
-![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
+<img width="941" height="986" alt="image" src="https://github.com/user-attachments/assets/d3887fd5-4efb-4d32-a7c8-7fdb86f1afd6" />
+<img width="548" height="1048" alt="image" src="https://github.com/user-attachments/assets/1af8f1bb-393f-4f7a-8811-a991f32ea8c2" />
+<img width="1034" height="925" alt="image" src="https://github.com/user-attachments/assets/c627d48e-1b14-4e52-bbd0-f073dcaf3d56" />
 
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Dari praktikum ini, Graph adalah struktur data yang terdiri dari node dan edge untuk menunjukkan hubungan antar data. Program yang dibuat dapat menampilkan graph serta melakukan penelusuran menggunakan DFS dan BFS dengan benar. Hal ini menunjukkan bahwa konsep graph pada materi sudah berhasil diterapkan dalam program.
 
 ## Referensi
 [1] Renaldi, R. (2014). IMPLEMENTASI MEDIA ANIMASI ROTOSCOPING GUNA MENINGKATKAN PEMAHAMAN MATERI GRAPH PADA MATA KULIAH STRUKTUR DATA (Doctoral dissertation, Universitas Pendidikan Indonesia).
