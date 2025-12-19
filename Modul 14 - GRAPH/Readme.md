@@ -3,7 +3,7 @@
 
 ## Dasar Teori
 
-Graph adalah kumpulan titik dan garis penghubung. Contohnya, tempat kost dan Common Lab adalah titik, sedangkan jalan yang menghubungkannya adalah garis penghubung.
+Graph adalah kumpulan titik dan garis penghubung. Contohnya, tempat kost dan parkiran adalah titik, sedangkan jalan yang menghubungkannya adalah garis penghubung.
 
 ## Guided 
 
